@@ -19,9 +19,13 @@ Description : A simple HTML file for form tag.
         <fieldset>
             <legend>Personal Information</legend>
             <!-- Add a label and input field for 'Name' here -->
+            <label for="name">Name:</label><br>
+            <input type="name" name="name" id="name"><br>
             <label for="email">Email:</label><br>
             <input type="email" id="email" name="email"><br>
             <!-- Add a label and input field for 'Password' here, ensure to use the correct type for password fields -->
+            <label for="password">Password:</label><br>
+            <input type="password" name="" id="">
         </fieldset>
 
         <fieldset>
@@ -30,11 +34,23 @@ Description : A simple HTML file for form tag.
 			<input type="radio" id="male" name="gender" value="male">
             <label for="male">Male</label><br>
             <!-- Create radio buttons for 'Female', and 'Other' gender options -->
-	
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br>
             <label for="fruits">Choose a fruit:</label><br>
-            <select id="fruits" name="fruits">
+            <select id="fruits" name="fruits" size="5">
 				<option value="apple">Apple</option>
                 <!-- Add options for various fruits like Banana, Orange, etc. (At least 10 fruits) -->
+                <option value="banana">Banana</option>
+                <option value="orange">Orange</option>
+                <option value="grape">Grape</option>
+                <option value="mango">Mango</option>
+                <option value="papaya">Papaya</option>
+                <option value="dragonfruit">Dragon fruit</option>
+                <option value="pineapple">Pineapple</option>
+                <option value="coconut">Coconut</option>
+                <option value="blueberries">Blueberries</option>
             </select><br>
 			<!-- Add some attributes to select tag that changes it from a drop menu to a scrollable list.-->
         </fieldset>
@@ -42,18 +58,29 @@ Description : A simple HTML file for form tag.
         <fieldset>
             <legend>Other Elements</legend>
             <!-- Add a label and input field for 'Birthday' here, use the appropriate type for date selection -->
+            <label for="birthday">Birthday:</label><br>
+            <input type="date" name="birthday" id="birthday"><br>
             <label for="favcolor">Favorite Color:</label><br>
             <input type="color" id="favcolor" name="favcolor"><br>
             <!-- Add a label and number input field for 'Quantity', set min to 1 and max to 5 -->
+            <label for="quantity">Quantity (between 1 and 5):</label><br>
+            <input type="number" id="quantity" name="quantity" min="1" max="5"><br>
+
             <label for="range">Range (between 1 and 10):</label><br>
-            <input type="range" id="range" name="range" min="1" max="10"><br>
+            <input type="range" id="range" name="range" min="1" max="10" value="2"><br>
 			<!-- Add an attribute to the range input to set its initial value to 2-->
+            <label for="homepage">Homepage</label><br>
+            <input type="url" name="homepage" id="homepage"><br>
             <!-- Add a label and input field for 'Homepage', use the correct type for URLs -->
             <label for="feedback">Feedback:</label><br>
-			<textarea id="feedback" name="feedback"></textarea><br>
+			<textarea id="feedback" name="feedback" cols="40" rows="7"></textarea><br>
             <!-- Add some attributes to the feedback textarea tag to make it bigger and suitable for editing texts-->
+            <input type="file" name="file" id="file"><br>
             <!-- Add a file input field -->
+            <input type="checkbox" name="Subscribe" id="Subscribe">
+            <label for="Subscribe"> Subscribe to newsletter</label><br>
             <!-- Add a checkbox for 'Subscribe to newsletter' -->
+            <input type="hidden" name="hiddenfield" id="hiddenfield" value="12345">
             <!-- Add a hidden field for 'customerId', set its value to '12345' -->
             <input type="submit" value="Submit">
             <input type="reset" value="Reset">
