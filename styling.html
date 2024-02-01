@@ -31,14 +31,23 @@ Description : Learning CSS.
         }
 
         
-        .inline-demo {
+        .inline-demo  {
             /*Change the display to see all elements of this type in a line.*/
-            display: inline;
-        }
-        
+            
+           
+                display: inline;
+                        }
+
+
+    
+
+
+
         .block-demo {
             /*Ensure .block-demo centers its text.*/
             text-align: center;
+
+
         }
 
         /*
@@ -51,21 +60,22 @@ Description : Learning CSS.
             /*
             Add CSS that I stick the first child to the left side of the screen.
             */
+
             position: absolute;
-            left: 10%;
+            left: 5%;
             color: red;
             
         }
 
-        .block-demo > .inline-demo:nth-child(2) {  
-            text-align: center;          
+        .block-demo > .inline-demo:nth-child(2) {         
+            text-align: center;      
             color: blue;
         }
 
         /* Add your css for the thrid child here. */
         .block-demo > .inline-demo:nth-child(3){
             position: absolute;
-            right: 10%;
+            right: 5%;
             color: green;
         }
 
@@ -77,7 +87,6 @@ Description : Learning CSS.
 
         .hover-demo:hover {
             /*Create a hover effect for .hover-demo that changes its color to blue and cursor to grabbing.*/
-            
         }
     </style>
 </head>
